@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find movies and TV series with similar plots">
+    <title>Home - Movie & TV Series Finder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to formatting CSS file -->
+    <link rel="stylesheet" href="layout.css"> <!-- Link to layout CSS file -->
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content section -->
+    <section>
+        <h1>Welcome to Movie & TV Series Finder</h1>
+        <p>Enter a movie or TV series you know and discover others with similar plots!</p>
+        <form>
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Enter a movie or TV series name" required>
+            <button type="submit">Find Similar</button>
+        </form>
+        <img src="movies.jpg" alt="Movies Image"> <!-- Inline image -->
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find movies and TV series with similar plots">
+    <title>Home - Movie & TV Series Finder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to formatting CSS file -->
+    <link rel="stylesheet" href="layout.css"> <!-- Link to layout CSS file -->
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <!-- Navigation bar  -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content section  -->
+    <section>
+        <h1>Welcome to Movie & TV Series Finder</h1>
+        <p>Enter a movie or TV series you know and discover others with similar plots!</p>
+        <form>
+            <!-- Form with multiple field sets  -->
+            <fieldset>
+                <legend>Search for Similar Movies or TV Series</legend>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Enter a movie or TV series name" required>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="movies">Movies</option>
+                    <option value="tv">TV Series</option>
+                </select>
+                <label for="release-date">Release Date:</label>
+                <input type="date" id="release-date" name="release-date">
+                <label for="rating">Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10">
+                <button type="submit">Find Similar</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        <img src="movies.jpg" alt="Movies Image"> <!-- Inline image  -->
+    </section>
+
+    <!-- JavaScript function for current day and time  -->
+    <footer>
+        <p id="date-time"></p>
+    </footer>
+</body>
+</html>

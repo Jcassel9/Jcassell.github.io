@@ -1,0 +1,136 @@
+/*Page Layouts */
+
+/* Block and floating elements */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Floated layout */
+section {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+}
+
+/* Grid layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Relative and absolute positioning */
+nav ul {
+    position: relative;
+}
+
+nav ul li {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Handle overflow */
+section {
+    overflow: auto;
+}
+
+/*Mobile Design */
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Flexbox for responsive design */
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+/*Page Layouts */
+
+/* Block and floating elements */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Floated layout */
+section {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+}
+
+/* Grid layout  */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Relative and absolute positioning ) */
+nav ul {
+    position: relative;
+}
+
+nav ul li {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Handle overflow  */
+section {
+    overflow: auto;
+}
+
+/* Mobile Design */
+
+/* Responsive design  */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Flexbox for responsive design  */
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
